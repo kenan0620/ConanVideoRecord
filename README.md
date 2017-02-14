@@ -1,2 +1,2 @@
 # ConanVideoRecord
-视频录制功能
+视频录制
