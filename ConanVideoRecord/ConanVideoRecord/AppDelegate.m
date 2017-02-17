@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "ConanAccessRight.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *homeVC = [[ViewController alloc]init];
+    UINavigationController *homeNav=[[UINavigationController alloc]initWithRootViewController:homeVC];
+    self.window.rootViewController = homeNav;
+    
+    [self.window makeKeyAndVisible];
+    
+    [[ConanAccessRight sharedInstance] ConanAccessRightCamera:^(BOOL Authorize) {
+        if (Authorize) {
+//            NSLog(@"ConanAccessRightCamera开启");
+        } else {
+//            NSLog(@"ConanAccessRightCamera未开启");
+        }
+    }];
+    
+    [[ConanAccessRight sharedInstance] ConanAccessRightMicrophone:^(BOOL Authorize) {
+        if (Authorize) {
+//            NSLog(@"ConanAccessRightMicrophone开启");
+        } else {
+//            NSLog(@"ConanAccessRightMicrophone未开启");
+        }
+    }];
     return YES;
 }
 
@@ -46,6 +69,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end

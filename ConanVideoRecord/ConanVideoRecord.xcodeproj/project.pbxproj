@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2780C3FF1E55528100FF66F4 /* ConanAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */; };
+		2780C4571E55848C00FF66F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */; };
 		27CC67211E52ED660015D671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC67201E52ED660015D671 /* main.m */; };
 		27CC67241E52ED660015D671 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC67231E52ED660015D671 /* AppDelegate.m */; };
 		27CC67271E52ED660015D671 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC67261E52ED660015D671 /* ViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2780C3FD1E55528100FF66F4 /* ConanAccessRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanAccessRight.h; sourceTree = "<group>"; };
+		2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRight.m; sourceTree = "<group>"; };
+		2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		27CC671C1E52ED660015D671 /* ConanVideoRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanVideoRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CC67201E52ED660015D671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27CC67221E52ED660015D671 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2780C4571E55848C00FF66F4 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2780C4551E55848B00FF66F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27CC67131E52ED660015D671 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,7 @@
 				27CC67381E52ED660015D671 /* ConanVideoRecordTests */,
 				27CC67431E52ED660015D671 /* ConanVideoRecordUITests */,
 				27CC671D1E52ED660015D671 /* Products */,
+				2780C4551E55848B00FF66F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +120,8 @@
 				27CC67231E52ED660015D671 /* AppDelegate.m */,
 				27CC67251E52ED660015D671 /* ViewController.h */,
 				27CC67261E52ED660015D671 /* ViewController.m */,
+				2780C3FD1E55528100FF66F4 /* ConanAccessRight.h */,
+				2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */,
 				27CC67281E52ED660015D671 /* Main.storyboard */,
 				27CC672B1E52ED660015D671 /* Assets.xcassets */,
 				27CC672D1E52ED660015D671 /* LaunchScreen.storyboard */,
@@ -276,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2780C3FF1E55528100FF66F4 /* ConanAccessRight.m in Sources */,
 				27CC67271E52ED660015D671 /* ViewController.m in Sources */,
 				27CC67241E52ED660015D671 /* AppDelegate.m in Sources */,
 				27CC67211E52ED660015D671 /* main.m in Sources */,
@@ -431,7 +449,7 @@
 				INFOPLIST_FILE = ConanVideoRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanVideoRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanVideoRecord.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -444,7 +462,7 @@
 				INFOPLIST_FILE = ConanVideoRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanVideoRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanVideoRecord.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +536,7 @@
 				27CC674B1E52ED660015D671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27CC674C1E52ED660015D671 /* Build configuration list for PBXNativeTarget "ConanVideoRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +545,7 @@
 				27CC674E1E52ED660015D671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27CC674F1E52ED660015D671 /* Build configuration list for PBXNativeTarget "ConanVideoRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +554,7 @@
 				27CC67511E52ED660015D671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
