@@ -137,7 +137,6 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
             }
             
         } else {
-            NSLog(@"ConanAccessRightMicrophone未开启");
             UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"麦克风权限未开启" message:@"ConanAccessRightMicrophone权限未开启" preferredStyle:UIAlertControllerStyleAlert];
             
             [self presentViewController:alertVC animated:YES completion:nil];

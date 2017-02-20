@@ -37,7 +37,6 @@
 {
     [[ConanAccessRight sharedInstance] ConanAccessRightCamera:^(BOOL Authorize) {
         if (Authorize) {
-            NSLog(@"ConanAccessRightCamera开启");
         } else {
             UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"相机权限未开启" message:@"ConanAccessRightCamera权限未开启" preferredStyle:UIAlertControllerStyleAlert];
             
@@ -47,21 +46,19 @@
                 
             }];
             
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-                
-            }];
+//            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+//                
+//            }];
             
             [alertVC addAction:okAction];
-            [alertVC addAction:cancelAction];
+//            [alertVC addAction:cancelAction];
             return ;
         }
     }];
     
     [[ConanAccessRight sharedInstance] ConanAccessRightMicrophone:^(BOOL Authorize) {
         if (Authorize) {
-            NSLog(@"ConanAccessRightMicrophone开启");
         } else {
-            NSLog(@"ConanAccessRightMicrophone未开启");
             UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"相机权限未开启" message:@"ConanAccessRightMicrophone权限未开启" preferredStyle:UIAlertControllerStyleAlert];
             
             [self presentViewController:alertVC animated:YES completion:nil];
@@ -70,18 +67,17 @@
                 
             }];
             
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-                
-            }];
+//            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+//                
+//            }];
             
             [alertVC addAction:okAction];
-            [alertVC addAction:cancelAction];
+//            [alertVC addAction:cancelAction];
             return ;
         }
     }];
     
     ConanVideoRecordVC *conanVideoRecordVC = [[ConanVideoRecordVC alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:conanVideoRecordVC];
     [self.navigationController pushViewController:conanVideoRecordVC animated:NO];
 }
 
