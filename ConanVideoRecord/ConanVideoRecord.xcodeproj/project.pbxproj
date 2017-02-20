@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2739DC411E5A97C900DBB5D1 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC401E5A97C900DBB5D1 /* HomeVC.m */; };
+		2739DC441E5A983D00DBB5D1 /* UIView+ConanViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC431E5A983D00DBB5D1 /* UIView+ConanViewLayer.m */; };
+		2739DC471E5A989500DBB5D1 /* ConanVideoRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC461E5A989500DBB5D1 /* ConanVideoRecordVC.m */; };
+		2739DC4A1E5A998500DBB5D1 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC491E5A998500DBB5D1 /* PlayVideoViewController.m */; };
 		2780C3FF1E55528100FF66F4 /* ConanAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */; };
 		2780C4571E55848C00FF66F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */; };
 		27CC67211E52ED660015D671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC67201E52ED660015D671 /* main.m */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2739DC3F1E5A97C900DBB5D1 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		2739DC401E5A97C900DBB5D1 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		2739DC421E5A983D00DBB5D1 /* UIView+ConanViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConanViewLayer.h"; sourceTree = "<group>"; };
+		2739DC431E5A983D00DBB5D1 /* UIView+ConanViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConanViewLayer.m"; sourceTree = "<group>"; };
+		2739DC451E5A989500DBB5D1 /* ConanVideoRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanVideoRecordVC.h; sourceTree = "<group>"; };
+		2739DC461E5A989500DBB5D1 /* ConanVideoRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanVideoRecordVC.m; sourceTree = "<group>"; };
+		2739DC481E5A998500DBB5D1 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
+		2739DC491E5A998500DBB5D1 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
 		2780C3FD1E55528100FF66F4 /* ConanAccessRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanAccessRight.h; sourceTree = "<group>"; };
 		2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRight.m; sourceTree = "<group>"; };
 		2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -120,6 +132,14 @@
 				27CC67231E52ED660015D671 /* AppDelegate.m */,
 				27CC67251E52ED660015D671 /* ViewController.h */,
 				27CC67261E52ED660015D671 /* ViewController.m */,
+				2739DC3F1E5A97C900DBB5D1 /* HomeVC.h */,
+				2739DC401E5A97C900DBB5D1 /* HomeVC.m */,
+				2739DC451E5A989500DBB5D1 /* ConanVideoRecordVC.h */,
+				2739DC461E5A989500DBB5D1 /* ConanVideoRecordVC.m */,
+				2739DC481E5A998500DBB5D1 /* PlayVideoViewController.h */,
+				2739DC491E5A998500DBB5D1 /* PlayVideoViewController.m */,
+				2739DC421E5A983D00DBB5D1 /* UIView+ConanViewLayer.h */,
+				2739DC431E5A983D00DBB5D1 /* UIView+ConanViewLayer.m */,
 				2780C3FD1E55528100FF66F4 /* ConanAccessRight.h */,
 				2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */,
 				27CC67281E52ED660015D671 /* Main.storyboard */,
@@ -293,9 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2739DC4A1E5A998500DBB5D1 /* PlayVideoViewController.m in Sources */,
+				2739DC471E5A989500DBB5D1 /* ConanVideoRecordVC.m in Sources */,
 				2780C3FF1E55528100FF66F4 /* ConanAccessRight.m in Sources */,
+				2739DC441E5A983D00DBB5D1 /* UIView+ConanViewLayer.m in Sources */,
 				27CC67271E52ED660015D671 /* ViewController.m in Sources */,
 				27CC67241E52ED660015D671 /* AppDelegate.m in Sources */,
+				2739DC411E5A97C900DBB5D1 /* HomeVC.m in Sources */,
 				27CC67211E52ED660015D671 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
