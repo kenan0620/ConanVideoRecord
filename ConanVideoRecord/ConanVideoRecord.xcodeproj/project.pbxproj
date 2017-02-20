@@ -11,6 +11,12 @@
 		2739DC441E5A983D00DBB5D1 /* UIView+ConanViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC431E5A983D00DBB5D1 /* UIView+ConanViewLayer.m */; };
 		2739DC471E5A989500DBB5D1 /* ConanVideoRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC461E5A989500DBB5D1 /* ConanVideoRecordVC.m */; };
 		2739DC4A1E5A998500DBB5D1 /* PlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739DC491E5A998500DBB5D1 /* PlayVideoViewController.m */; };
+		2739DC931E5AD57700DBB5D1 /* changeCamer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC8D1E5AD57700DBB5D1 /* changeCamer.png */; };
+		2739DC941E5AD57700DBB5D1 /* flashOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC8E1E5AD57700DBB5D1 /* flashOff.png */; };
+		2739DC951E5AD57700DBB5D1 /* flashOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC8F1E5AD57700DBB5D1 /* flashOn.png */; };
+		2739DC961E5AD57700DBB5D1 /* focusImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC901E5AD57700DBB5D1 /* focusImg.png */; };
+		2739DC971E5AD57700DBB5D1 /* shootFinish.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC911E5AD57700DBB5D1 /* shootFinish.png */; };
+		2739DC981E5AD57700DBB5D1 /* videoPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2739DC921E5AD57700DBB5D1 /* videoPlay.png */; };
 		2780C3FF1E55528100FF66F4 /* ConanAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */; };
 		2780C4571E55848C00FF66F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */; };
 		27CC67211E52ED660015D671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC67201E52ED660015D671 /* main.m */; };
@@ -49,6 +55,12 @@
 		2739DC461E5A989500DBB5D1 /* ConanVideoRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanVideoRecordVC.m; sourceTree = "<group>"; };
 		2739DC481E5A998500DBB5D1 /* PlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideoViewController.h; sourceTree = "<group>"; };
 		2739DC491E5A998500DBB5D1 /* PlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideoViewController.m; sourceTree = "<group>"; };
+		2739DC8D1E5AD57700DBB5D1 /* changeCamer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeCamer.png; sourceTree = "<group>"; };
+		2739DC8E1E5AD57700DBB5D1 /* flashOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashOff.png; sourceTree = "<group>"; };
+		2739DC8F1E5AD57700DBB5D1 /* flashOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashOn.png; sourceTree = "<group>"; };
+		2739DC901E5AD57700DBB5D1 /* focusImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focusImg.png; sourceTree = "<group>"; };
+		2739DC911E5AD57700DBB5D1 /* shootFinish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootFinish.png; sourceTree = "<group>"; };
+		2739DC921E5AD57700DBB5D1 /* videoPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPlay.png; sourceTree = "<group>"; };
 		2780C3FD1E55528100FF66F4 /* ConanAccessRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanAccessRight.h; sourceTree = "<group>"; };
 		2780C3FE1E55528100FF66F4 /* ConanAccessRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRight.m; sourceTree = "<group>"; };
 		2780C4561E55848C00FF66F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -154,6 +166,12 @@
 		27CC671F1E52ED660015D671 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2739DC8D1E5AD57700DBB5D1 /* changeCamer.png */,
+				2739DC8E1E5AD57700DBB5D1 /* flashOff.png */,
+				2739DC8F1E5AD57700DBB5D1 /* flashOn.png */,
+				2739DC901E5AD57700DBB5D1 /* focusImg.png */,
+				2739DC911E5AD57700DBB5D1 /* shootFinish.png */,
+				2739DC921E5AD57700DBB5D1 /* videoPlay.png */,
 				27CC67201E52ED660015D671 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -286,9 +304,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2739DC971E5AD57700DBB5D1 /* shootFinish.png in Resources */,
+				2739DC961E5AD57700DBB5D1 /* focusImg.png in Resources */,
+				2739DC931E5AD57700DBB5D1 /* changeCamer.png in Resources */,
 				27CC672F1E52ED660015D671 /* LaunchScreen.storyboard in Resources */,
+				2739DC941E5AD57700DBB5D1 /* flashOff.png in Resources */,
 				27CC672C1E52ED660015D671 /* Assets.xcassets in Resources */,
 				27CC672A1E52ED660015D671 /* Main.storyboard in Resources */,
+				2739DC981E5AD57700DBB5D1 /* videoPlay.png in Resources */,
+				2739DC951E5AD57700DBB5D1 /* flashOn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
